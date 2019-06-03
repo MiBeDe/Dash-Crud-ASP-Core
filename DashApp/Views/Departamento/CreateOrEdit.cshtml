@@ -1,0 +1,31 @@
+﻿@model DashApp.ViewsModels.DepartamentoViewModel
+@{
+    ViewData["Title"] = "Cadastrar Departamento";
+}
+<div class="card">
+    <div class="card-title text-center">
+        <span class=""></span>
+        <h2>Cadastro de Departamento</h2>
+    </div>
+    <div class="card-body">
+        <form id="form" class="form-horizontal" asp-action="CreateOrEdit" asp-controller="Departamento"
+              data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Departamento'"
+              asp-anti-forgery>
+            <div class="form-row">
+                <input type="hidden" class="form-control" asp-for="Id" />
+                <div class="form-group col-md-6">
+                    <label for="departamento">Departamento</label>
+                    <input type="text" class="form-control" asp-for="Setor">
+                    <span asp-validation-for="Setor" class="text-danger"></span>
+                </div>
+            </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.validate.unobtrusive.js"></script>
+    <script src="~/js/jquery.unobtrusive-ajax.min.js"></script>
+}

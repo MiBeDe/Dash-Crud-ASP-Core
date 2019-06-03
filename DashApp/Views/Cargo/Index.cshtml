@@ -1,0 +1,49 @@
+﻿@model IEnumerable<DashApp.ViewsModels.CargoViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-center">#</th>
+            <th>Cargo</th>
+            @*<th>Job Position</th>
+                <th>Since</th>
+                <th class="text-right">Salary</th>
+                <th class="text-right">Actions</th>*@
+        </tr>
+    </thead>
+    <div class="navbar navbar-collapse justify-content-end">
+        <form>
+            <button class="btn btn-warning" asp-action="CreateOrEdit">Cadastrar</button>
+        </form>
+    </div>
+    <tbody>
+        @if (@Model != null)
+        {
+            foreach (var viewModel in @Model)
+            {
+                <tr>
+                    <td class="text-center">@viewModel.Id</td>
+                    <td>
+                        <a class="setor">@viewModel.Atribuicao</a>
+                    </td>
+                    <td class="td-actions text-right">
+                        <a href="#">
+                            <button type="button" rel="tooltip" class="btn btn-info btn-sm btn-round btn-icon">
+                                <i class="tim-icons icon-single-02"></i>
+                            </button>
+                        </a>
+                        <button type="button" rel="tooltip" class="btn btn-success btn-sm btn-round btn-icon">
+                            <i class="tim-icons icon-settings"></i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-danger btn-sm btn-round btn-icon">
+                            <i class="tim-icons icon-simple-remove"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

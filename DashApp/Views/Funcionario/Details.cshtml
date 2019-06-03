@@ -1,0 +1,74 @@
+﻿@model DashApp.ViewsModels.FuncionarioViewModel
+@using DashApp.ViewsModels
+@{
+    ViewData["Title"] = "Cadastrar Funcionário";
+}
+<div class="card">
+    <div class="card-title text-center">
+        <span class=""></span>
+        <h2>Cadastro de Funcionário</h2>
+    </div>
+    <div class="card-body">
+        <form id="form" class="form-horizontal">
+            <fieldset disabled>
+                <div class="form-row">
+                    <input type="hidden" class="form-control" asp-for="Id" />
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="disabledTextInput" class="form-control" asp-for="Nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="disabledTextInput" class="form-control" asp-for="Cpf">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rg">RG</label>
+                    <input type="text" id="disabledTextInput" class="form-control" asp-for="Rg">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="disabledTextInput" class="form-control" asp-for="Endereco">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="disabledTextInput" class="form-control" asp-for="Cidade">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="estado">Estado</label>
+                        <select asp-for="Estado" id="disabledSelect" class="form-control">
+                            <option selected>Escolha...</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                            <option>MG</option>
+                            <option>MS</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="cep">Cep</label>
+                        <input type="text" id="disabledTextInput" class="form-control" asp-for="Cep">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="pais">Pais</label>
+                        <input type="text" id="disabledTextInput" class="form-control" asp-for="Pais">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="cargo">Cargo</label>
+                        <select asp-for="CargoId" id="disabledSelect" class="form-control" asp-items="@(new SelectList(@Model.Cargos, "Id", "Atribuicao"))"></select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="departamento">Departamento</label>
+                        <select asp-for="DepartamentoId" id="disabledSelect" class="form-control" asp-items="@(new SelectList(@Model.Departamentos, "Id", "Setor"))"></select>
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppData.deps.json
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppData.runtimeconfig.json
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppData.runtimeconfig.dev.json
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppData.dll
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppData.pdb
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppDomain.dll
+D:\Visual Learning\DashApp\DashAppData\bin\Debug\netcoreapp2.2\DashAppDomain.pdb
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.csprojAssemblyReference.cache
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.csproj.CoreCompileInputs.cache
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.AssemblyInfoInputs.cache
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.AssemblyInfo.cs
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.csproj.CopyComplete
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.dll
+D:\Visual Learning\DashApp\DashAppData\obj\Debug\netcoreapp2.2\DashAppData.pdb

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashApp", "DashApp\DashApp.csproj", "{43F9C219-DCF3-4E9E-9663-4B9111A3CAF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentation", "0-Presentation", "{57F43EE3-B215-4EEB-9081-B1A69C67BE67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Data", "4-Data", "{27D2CF4F-7187-4D99-A863-CB2C0F3DF233}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-DI", "2-DI", "{FF933E54-3465-437E-98FD-DB1C5BB2FD7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{6901CAA7-F901-42E0-AEA6-8B2A35B1A3F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashAppDI", "DashAppDI\DashAppDI.csproj", "{CFA827D8-42A4-40ED-BE7E-8ACABEE6FC61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashAppDomain", "DashAppDomain\DashAppDomain.csproj", "{88296C2E-6A8C-4A46-BF3C-708D518C7C91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashAppData", "DashAppData\DashAppData.csproj", "{4ABC1340-BA71-4C3D-BB4A-FEA8DBA71AEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43F9C219-DCF3-4E9E-9663-4B9111A3CAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F9C219-DCF3-4E9E-9663-4B9111A3CAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F9C219-DCF3-4E9E-9663-4B9111A3CAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F9C219-DCF3-4E9E-9663-4B9111A3CAF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA827D8-42A4-40ED-BE7E-8ACABEE6FC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA827D8-42A4-40ED-BE7E-8ACABEE6FC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA827D8-42A4-40ED-BE7E-8ACABEE6FC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA827D8-42A4-40ED-BE7E-8ACABEE6FC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88296C2E-6A8C-4A46-BF3C-708D518C7C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88296C2E-6A8C-4A46-BF3C-708D518C7C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88296C2E-6A8C-4A46-BF3C-708D518C7C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88296C2E-6A8C-4A46-BF3C-708D518C7C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABC1340-BA71-4C3D-BB4A-FEA8DBA71AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABC1340-BA71-4C3D-BB4A-FEA8DBA71AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABC1340-BA71-4C3D-BB4A-FEA8DBA71AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABC1340-BA71-4C3D-BB4A-FEA8DBA71AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43F9C219-DCF3-4E9E-9663-4B9111A3CAF5} = {57F43EE3-B215-4EEB-9081-B1A69C67BE67}
+		{CFA827D8-42A4-40ED-BE7E-8ACABEE6FC61} = {FF933E54-3465-437E-98FD-DB1C5BB2FD7D}
+		{88296C2E-6A8C-4A46-BF3C-708D518C7C91} = {6901CAA7-F901-42E0-AEA6-8B2A35B1A3F6}
+		{4ABC1340-BA71-4C3D-BB4A-FEA8DBA71AEF} = {27D2CF4F-7187-4D99-A863-CB2C0F3DF233}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37C19D9-787F-4ABD-8309-F6B254FC76CE}
+	EndGlobalSection
+EndGlobal

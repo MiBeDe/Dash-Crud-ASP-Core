@@ -1,0 +1,9 @@
+D:\Visual Learning\DashApp\DashAppDomain\bin\Debug\netcoreapp2.2\DashAppDomain.deps.json
+D:\Visual Learning\DashApp\DashAppDomain\bin\Debug\netcoreapp2.2\DashAppDomain.dll
+D:\Visual Learning\DashApp\DashAppDomain\bin\Debug\netcoreapp2.2\DashAppDomain.pdb
+D:\Visual Learning\DashApp\DashAppDomain\obj\Debug\netcoreapp2.2\DashAppDomain.csproj.CoreCompileInputs.cache
+D:\Visual Learning\DashApp\DashAppDomain\obj\Debug\netcoreapp2.2\DashAppDomain.AssemblyInfoInputs.cache
+D:\Visual Learning\DashApp\DashAppDomain\obj\Debug\netcoreapp2.2\DashAppDomain.AssemblyInfo.cs
+D:\Visual Learning\DashApp\DashAppDomain\obj\Debug\netcoreapp2.2\DashAppDomain.dll
+D:\Visual Learning\DashApp\DashAppDomain\obj\Debug\netcoreapp2.2\DashAppDomain.pdb
+D:\Visual Learning\DashApp\DashAppDomain\obj\Debug\netcoreapp2.2\DashAppDomain.csprojAssemblyReference.cache

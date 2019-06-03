@@ -1,0 +1,87 @@
+﻿@model DashApp.ViewsModels.FuncionarioViewModel
+@using DashApp.ViewsModels
+@{
+    ViewData["Title"] = "Cadastrar Funcionário";
+}
+<div class="card">
+    <div class="card-title text-center">
+        <span class=""></span>
+        <h2>Cadastro de Funcionário</h2>
+    </div>
+    <div class="card-body">
+        <form id="form" class="form-horizontal" asp-action="CreateOrEdit" asp-controller="Funcionario"
+              data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Funcionario'"
+              asp-anti-forgery>
+            <div class="form-row">
+                <input type="hidden" class="form-control" asp-for="Id" />
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" asp-for="Nome">
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" asp-for="Cpf">
+                    <span asp-validation-for="Cpf" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rg">RG</label>
+                <input type="text" class="form-control" asp-for="Rg">
+                <span asp-validation-for="Rg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" asp-for="Endereco">
+                <span asp-validation-for="Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" asp-for="Cidade">
+                    <span asp-validation-for="Cidade" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select asp-for="Estado" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>MG</option>
+                        <option>MS</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="cep">Cep</label>
+                    <input type="text" class="form-control" asp-for="Cep">
+                    <span asp-validation-for="Cep" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="pais">Pais</label>
+                    <input type="text" class="form-control" asp-for="Pais">
+                    <span asp-validation-for="Pais" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cargo">Cargo</label>
+                    <select asp-for="CargoId" class="form-control" asp-items="@(new SelectList(@Model.Cargos, "Id", "Atribuicao"))"></select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="departamento">Departamento</label>
+                    <select asp-for="DepartamentoId" class="form-control" asp-items="@(new SelectList(@Model.Departamentos, "Id", "Setor"))"></select>
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.validate.unobtrusive.js"></script>
+    <script src="~/js/jquery.unobtrusive-ajax.min.js"></script>
+}

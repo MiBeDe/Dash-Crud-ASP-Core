@@ -1,0 +1,67 @@
+﻿@model IEnumerable<DashApp.ViewsModels.FuncionarioViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-center">#</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Cargo</th>
+            <th >Departamento</th>
+            @*<th>Job Position</th>
+                <th>Since</th>
+                <th class="text-right">Salary</th>
+                <th class="text-right">Actions</th>*@
+        </tr>
+    </thead>
+    <div class="navbar navbar-collapse justify-content-end">
+        <form>
+            <button class="btn btn-warning" asp-action="CreateOrEdit">Cadastrar</button>
+        </form>
+    </div>
+    <tbody>
+        @if (@Model != null)
+        {
+            foreach (var viewModel in @Model)
+            {
+        <tr>
+            <td class="text-center">@viewModel.Id</td>
+            <td>
+                <a class="nome">@viewModel.Nome</a>
+            </td>
+            <td>
+                <a class="cpf">@viewModel.Cpf</a>
+            </td>
+            <td>
+                <a class="cargo">@viewModel.CargoName</a>
+            </td>
+            <td>
+                <a class="departamento">@viewModel.DepartamentoName</a>
+            </td>
+
+            <td class="td-actions text-right">
+                <a href="../Funcionario/Details/@viewModel.Id">
+                    <button type="button" rel="tooltip" class="btn btn-info btn-sm btn-round btn-icon">
+                        <i class="tim-icons icon-single-02"></i>
+                    </button>
+                </a>
+                <a href="../Funcionario/CreateOrEdit/@viewModel.Id">
+                    <button type="button" rel="tooltip" class="btn btn-success btn-sm btn-round btn-icon">
+                        <i class="tim-icons icon-settings"></i>
+                    </button>
+                </a>
+                
+                    <a href="../Funcionario/Deletar/@viewModel.Id">
+                        <button type="submit" rel="tooltip" class="btn btn-danger btn-sm btn-round btn-icon">
+                            <i class="tim-icons icon-simple-remove"></i>
+                        </button>
+                    </a>
+            </td>
+        </tr>
+            }
+        }
+    </tbody>
+</table>
